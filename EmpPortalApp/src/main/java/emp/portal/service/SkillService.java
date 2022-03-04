@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
 import emp.portal.entity.SkillSet;
+import io.ahad.Service.NotFoundException;
 
 @Service
 public interface SkillService {

@@ -299,7 +299,13 @@ public class Emp_Controller {
 	    public SkillSet getSkills(@PathVariable("title") String title) {
 	    SkillSet skills=skillRepository.findByTitle(title);
 		return skills;     
-	    }	    
+	    }
+	    /*------------3rdMarch------------------*/
+	    @GetMapping("aboutme/skills")
+	    public List<SkillSet> getAllSkillsForEmployee(){
+	    	List<SkillSet> skills=skillRepository.findAll();
+	    	return skills;
+	    }
 	    
 }
 
